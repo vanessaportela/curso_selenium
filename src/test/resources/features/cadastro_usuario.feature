@@ -11,3 +11,11 @@ Funcionalidade: Cadastro de usuário
     E clico em registrar
     Então vejo a mensagem de cadastro realizado
 
+  @cadastro-sucesso2
+  Cenário: Registrar novo usuário com sucesso2
+    Dado que estou na tela inicial
+    E acesso o cadastro de usuário
+    Quando eu preencho o formulário de cadastro
+    E clico em registrar
+    Então vejo a mensagem de cadastro realizado
+

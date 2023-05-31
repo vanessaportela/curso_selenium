@@ -4,14 +4,16 @@ import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import pages.CadastroPage;
+import runner.RunBase;
 import runner.RunCucumberTest;
 
 public class CadastroSteps extends RunCucumberTest {
 
-    CadastroPage cadastroPage = new CadastroPage(driver);
+    CadastroPage cadastroPage = new CadastroPage();
 
     @Dado("^que estou na tela inicial$")
     public void que_estou_na_tela_inicial() {
+        getDriver(RunBase.Browser.CHROME);
         cadastroPage.acessarTelaInicial();
     }
 
